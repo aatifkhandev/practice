@@ -13,8 +13,8 @@ def sumOfDigits(n):
         n = n//10
         sum +=ld
         
-    if sum>n:
-        sumOfDigits(n)
+    while sum>10:
+       return sumOfDigits(sum)
         
     return sum
         
@@ -22,4 +22,4 @@ def sumOfDigits(n):
 
 
 
-print(sumOfDigits(9875))
+print(sumOfDigits(12345))
